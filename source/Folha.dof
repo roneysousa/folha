@@ -90,8 +90,8 @@ MaxStackSize=1048576
 ImageBase=4194304
 ExeDescription=
 [Directories]
-OutputDir=
-UnitOutputDir=
+OutputDir=..\bin
+UnitOutputDir=..\dcu
 PackageDLLOutputDir=
 PackageDCPOutputDir=
 SearchPath=
@@ -134,20 +134,12 @@ OriginalFilename=
 ProductName=
 ProductVersion=1.0.0.0
 Comments=
-[Excluded Packages]
-c:\arquivos de programas\borland\delphi7\Bin\dclmcn70.bpl=Borland DataSnap Connection Components
-c:\arquivos de programas\borland\delphi7\Bin\dclie70.bpl=Internet Explorer Components
-c:\arquivos de programas\borland\delphi7\Bin\DCLIB70.bpl=InterBase Data Access Components
-c:\arquivos de programas\borland\delphi7\Bin\dcltee70.bpl=TeeChart Components
-c:\arquivos de programas\borland\delphi7\Bin\dcldss70.bpl=Borland Decision Cube Components
-c:\arquivos de programas\borland\delphi7\Bin\dclsmpedit70.bpl=Borland Editor Script Enhancements
-c:\arquivos de programas\borland\delphi7\Bin\applet70.bpl=Borland Control Panel Applet Package
-c:\arquivos de programas\borland\delphi7\Bin\dclemacsedit70.bpl=Borland Editor Emacs Enhancements
-c:\arquivos de programas\borland\delphi7\Bin\dclact70.bpl=Borland ActionBar Components
-c:\arquivos de programas\borland\delphi7\Bin\dclmlwiz70.bpl=Borland Markup Language Wizards
-c:\arquivos de programas\borland\delphi7\Bin\dcl31w70.bpl=Delphi 1.0 Compatibility Components
-C:\WINDOWS\system32\ibevnt70.bpl=Borland Interbase Event Alerter Component
-c:\arquivos de programas\borland\delphi7\Bin\dclshlctrls70.bpl=Shell Control Property and Component Editors
-c:\arquivos de programas\borland\delphi7\Bin\dclIntraweb_50_70.bpl=Intraweb 5.0 Design Package for Delphi 7
-c:\arquivos de programas\borland\delphi7\Projects\Bpl\TCaptionEditor_D7.bpl=(untitled)
-c:\arquivos de programas\borland\delphi7\Bin\dclclxdb70.bpl=Borland CLX Database Components
+[HistoryLists\hlUnitAliases]
+Count=1
+Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+[HistoryLists\hlUnitOutputDirectory]
+Count=1
+Item0=..\dcu
+[HistoryLists\hlOutputDirectorry]
+Count=1
+Item0=..\bin

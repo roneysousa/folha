@@ -57,6 +57,5 @@ begin
   Application.CreateForm(TdmFolha, dmFolha);
   Application.CreateForm(TdmFolha2, dmFolha2);
   Application.CreateForm(TfrmPrincFolha, frmPrincFolha);
-  Application.CreateForm(TfrmLogon, frmLogon);
   Application.Run;
 end.

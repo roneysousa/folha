@@ -1,0 +1,69 @@
+inherited frmLocalizarFuncionario: TfrmLocalizarFuncionario
+  Caption = 'Localizar Funcion'#225'rio'
+  ClientWidth = 452
+  OldCreateOrder = True
+  PixelsPerInch = 96
+  TextHeight = 13
+  inherited Panel1: TPanel
+    Width = 452
+    Height = 53
+    inherited lblConsultar: TLabel
+      Top = 3
+    end
+    inherited edtConsultar: TEdit
+      Top = 19
+      OnChange = edtConsultarChange
+    end
+    inherited btnAlterar: TBitBtn
+      Left = 368
+      Top = 15
+      Caption = '&OK'
+      OnClick = btnAlterarClick
+    end
+  end
+  inherited Panel3: TPanel
+    Left = 418
+    Top = 53
+    Height = 196
+  end
+  inherited grdConsultar: TDBGrid
+    Top = 53
+    Width = 418
+    Height = 196
+    DataSource = dsConsultar
+    OnDblClick = grdConsultarDblClick
+    Columns = <
+      item
+        Expanded = False
+        FieldName = 'FUN_MATRICULA'
+        Title.Caption = 'MATRICULA'
+        Width = 65
+        Visible = True
+      end
+      item
+        Expanded = False
+        FieldName = 'FUN_NOME'
+        Title.Caption = 'NOME'
+        Width = 326
+        Visible = True
+      end>
+  end
+  inherited datasetConsultar: TSQLDataSet
+    CommandText = 
+      'select FUN_MATRICULA, FUN_NOME from FUNCIONARIOS order by FUN_NO' +
+      'ME'
+    MaxBlobSize = -1
+    SQLConnection = dmFolha.sqlCon_Folha
+  end
+  inherited cdsConsultar: TClientDataSet
+    object cdsConsultarFUN_MATRICULA: TIntegerField
+      FieldName = 'FUN_MATRICULA'
+      Required = True
+      DisplayFormat = '0000000'
+    end
+    object cdsConsultarFUN_NOME: TStringField
+      FieldName = 'FUN_NOME'
+      Size = 50
+    end
+  end
+end
